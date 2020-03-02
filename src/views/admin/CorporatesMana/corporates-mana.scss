@@ -1,0 +1,40 @@
+@import '../../../sass/variables.scss';
+
+.corporates-mana {
+    padding: 2rem;
+    .table-header {
+        display: inline-flex;
+        width: 100%;
+        .input-group {
+            width: 270px;
+            margin-right: auto;
+            .form-control {
+                height: 40px;
+                border-radius: 20px;
+                padding-left: 45px;
+            }
+            .btn-search {
+                position: absolute;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                z-index: 5;
+                background-color: $orange;
+                &:hover, &:active, &:focus {
+                    background-color: $orange;
+                }
+                .img-search {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .img-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: dotted 1px;
+        padding: 2px;
+    }
+}

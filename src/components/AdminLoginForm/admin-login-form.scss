@@ -1,0 +1,53 @@
+@import '../../sass/variables.scss';
+
+.admin-login {
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .admin-login-form {
+        position: relative;
+        .form-group {
+            position: relative;
+            .form-control {
+                height: 50px;
+                border-radius: 30px;
+                padding-left: 20px;
+                padding-right: 50px;
+            }
+            
+            .input-icon {
+                position: absolute;
+                align-self: center;
+                z-index: 10;
+                right: 20px;
+                margin-top: 18px;
+            }
+            .btn-toggle-show {
+                position: absolute;
+                align-self: center;
+                z-index: 10;
+                left: 15px;
+                color: $gray;
+            }
+        }
+        .btn-admin-login-form-submit {
+            width: 100%;
+            background-color: $orange;
+            border-radius: 30px;
+            height: 50px;
+            border: none;
+        }
+        .err-msg {
+            color: $gray;
+        }
+    }
+    .login-form {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../sass/colors.scss';
+
+.btn-upload {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    &:hover, &:focus, &:active {
+        background-color: #00000033 !important;
+    }
+}

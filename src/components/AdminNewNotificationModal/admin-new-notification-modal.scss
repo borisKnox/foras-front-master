@@ -1,0 +1,85 @@
+@import '../../sass/variables.scss';
+
+.btn-new-notification {
+    border-radius: 20px;
+    background-color: $accent-orange;
+    border: none;
+    &:hover, &:focus, &:active {
+        background-color: $orange !important;
+        border: none;
+    }
+}
+
+.new-notification-modal {
+    .modal-dialog {
+        margin-top: 170px;
+        max-width: 450px !important;
+        .modal-content {
+            border-radius: 1.5rem;
+            background-image: url("../../assets/images/bg-modal-footer.png");
+            background-size: 100% 200px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            .modal-header {
+                text-align: center;
+                border: none;
+                .modal-title {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: solid 3px $accent-orange;
+                    padding-bottom: 10px;
+                }
+            }
+            .modal-body {
+                .new-notification-form {
+                    margin-left: auto;
+                    margin-right: auto;
+                    .input-icon {
+                        position: absolute;
+                        align-self: center;
+                        z-index: 10;
+                        margin-right: 20px;
+                    }
+                    input.form-control {
+                        padding-left: 20px;
+                        padding-right: 50px;
+                        border-radius: 30px;
+                        .input-password {
+                            padding-left: 60px;
+                        }
+                    }
+                    .btn-toggle-show {
+                        position: absolute;
+                        align-self: center;
+                        z-index: 10;
+                        left: 15px;
+                        color: $gray;
+                    }
+                    .err-msg {
+                        color: $gray;
+                    }
+                }
+                .social-icon-group {
+                    max-width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+            }
+            .modal-footer {
+                height: 200px;
+                position: relative;
+                border: none;
+                .btn-submit {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 60px;
+                    border-radius: 30px;
+                    padding: 10px 30px;
+                }
+            }
+        }
+        
+    }
+}
