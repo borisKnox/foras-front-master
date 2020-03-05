@@ -12,6 +12,10 @@ const path = {
     newNotification: 'admin/newNotification',
     getMessages: 'admin/messages',
     getTickets: 'admin/tickets',
+    newPackage: 'admin/newPackage',
+    getPackageList: 'admin/getPackageList',
+    getPaymentHistory: 'admin/getPaymentHistory',
+    searchPaymentHistory: 'admin/searchPaymentHistory'
 };
 
 export default {
@@ -99,4 +103,40 @@ export default {
 
         return http.post(path.getTickets, body, header);
     },
+    newPackage: function(body){
+        const user = session.get('foras-user');
+        const api_token = user ? user.api_token : '';
+        const header = {
+            Authorization: 'Bearer ' + api_token
+        };
+
+        return http.post(path.newPackage, body, header);
+    },
+    getPackageList: function(body){
+        const user = session.get('foras-user');
+        const api_token = user ? user.api_token : '';
+        const header = {
+            Authorization: 'Bearer ' + api_token
+        };
+
+        return http.post(path.getPackageList, body, header);
+    },
+    getPaymentHistory: function(body){
+        const user = session.get('foras-user');
+        const api_token = user ? user.api_token : '';
+        const header = {
+            Authorization: 'Bearer ' + api_token
+        };
+
+        return http.post(path.getPaymentHistory, body, header);
+    },
+    searchPaymentHistory: function(body){
+        const user = session.get('foras-user');
+        const api_token = user ? user.api_token : '';
+        const header = {
+            Authorization: 'Bearer ' + api_token
+        };
+
+        return http.post(path.searchPaymentHistory, body, header);
+    }
 }

@@ -26,6 +26,9 @@ import MessagesMana from '../views/admin/MessagesMana';
 // Contact Management
 import ContactsMana from '../views/admin/ContactsMana';
 
+import MembershipMana from '../views/admin/MembershipMana';
+import PaymentHistoryMana from '../views/admin/PaymentHistoryMana';
+
 class AdminRoute extends React.Component {
   constructor(props) {
     super();
@@ -94,6 +97,12 @@ function LoggedInAdmin() {
             </Route>
             <Route path="/admin/contacts">
               <ContactsMana />
+            </Route>
+            <Route path="/admin/membership">
+              <MembershipMana />
+            </Route>
+            <Route path="/admin/paymenthistory">
+              <PaymentHistoryMana />
             </Route>
           </Switch>
         </div>

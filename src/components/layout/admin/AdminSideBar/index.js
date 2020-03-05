@@ -46,6 +46,12 @@ class AdminSideBar extends React.Component {
                         <ListGroup.Item href="/admin/contacts" action className={this.state.activeRoute === '/admin/contacts' ? 'active' : ''} >
                             Contacts
                         </ListGroup.Item>
+                        <ListGroup.Item href="/admin/membership" action className={this.state.activeRoute === '/admin/membership' ? 'active' : ''} >
+                            Membership
+                        </ListGroup.Item>
+                        <ListGroup.Item href="/admin/paymentHistory" action className={this.state.activeRoute === '/admin/paymentHistory' ? 'active' : ''} >
+                            PaymentHistory
+                        </ListGroup.Item>
                     </ListGroup>
                 </div>
             </div>
